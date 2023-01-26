@@ -47,10 +47,12 @@ p {
 /* .navbar */
 
 header {
+  padding: 5px 0;
   background-color: var(--c1);
   position: fixed;
   width: 100%;
   top: 0px;
+  z-index: 2;
 }
 
 header .container {
@@ -192,6 +194,99 @@ header .container {
   padding: 15px 0;
 }
 
+/* menu section */
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu__smtitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--c2);
+  padding: 15px 0;
+}
+
+.menu__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--c4);
+  padding: 15px 0;
+}
+
+.menu__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.menu__col {
+  position: relative;
+  width: 32%;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background-color: var(--c5);
+  text-align: center;
+}
+
+.menu__shop {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  right: 0;
+  background-color: var(--c3);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.menu__shop a {
+  font-size: 20px;
+  color: var(--c5);
+}
+
+.menu__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu__inner__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__inner__img img {
+  width: 80%;
+}
+
+.menu__inner__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.menu__inner__text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.menu__inner__price {
+  font-weight: 700;
+  color: var(--c3);
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     padding: 0 60px;
@@ -207,7 +302,7 @@ header .container {
   .nav__list {
     height: 0;
     position: absolute;
-    top: 40px;
+    top: 55px;
     left: 0;
     right: 0;
     width: 100vw;
@@ -235,6 +330,15 @@ header .container {
   .about__content {
     width: 90%;
   }
+
+  .menu__row {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .menu__col {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -258,22 +362,33 @@ header .container {
     font-size: 14px;
   }
 
-  .about__smtitle {
+  .about__smtitle,
+  .menu__smtitle {
     font-size: 24px;
   }
 
-  .about__title {
+  .about__title,
+  .menu__title {
     font-size: 30px;
   }
 
   .about__text {
     font-size: 18px;
   }
+
+  .menu__col {
+    width: 90%;
+    padding: 25px 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   header .container {
     padding: 0 20px;
+  }
+
+  .nav__logo a {
+    font-size: 30px;
   }
 
   .container {
@@ -308,15 +423,25 @@ header .container {
     width: 100%;
   }
 
-  .about__smtitle {
+  .about__smtitle,
+  .menu__smtitle {
     font-size: 20px;
   }
 
-  .about__title {
+  .about__title,
+  .menu__title {
     font-size: 26px;
   }
 
   .about__text {
     font-size: 16px;
+  }
+
+  .menu__inner__img img {
+    width: 60%;
+  }
+
+  .menu__col {
+    width: 100%;
   }
 }
