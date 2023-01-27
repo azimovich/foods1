@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foods</title>
 
-    <!-- LINK CSS -->
-    <link rel="stylesheet" href="/main.css" />
-
     <!-- LINK ICONSCOUT -->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+
+    <!-- LINK AOU LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -31,19 +34,26 @@
           <li class="nav__item">
             <a class="nav__link" href="#about">About</a>
           </li>
-          <li class="nav__item"><a class="nav__link" href="#">Menu</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Service</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#service">Service</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
     </header>
 
     <main>
       <!-- home section -->
-
       <section class="home" id="home">
         <div class="container">
-          <div class="home__content">
+          <div
+            class="home__content"
+            data-aos="fade-right"
+            data-aos-duration="2600"
+          >
             <h1 class="home__content__title">Fast Foods.</h1>
             <p class="home__content__text">
               Foods the <br />
@@ -51,7 +61,7 @@
             </p>
             <a class="home__content__btn" href="#"><button>Our Menu</button></a>
           </div>
-          <div class="home__img">
+          <div class="home__img" data-aos="fade-left" data-aos-duration="2600">
             <img src="/img/home.png" alt="" />
           </div>
         </div>
@@ -60,10 +70,18 @@
       <!-- about section -->
       <section class="about" id="about">
         <div class="container">
-          <div class="about__img">
+          <div
+            class="about__img"
+            data-aos="fade-right"
+            data-aos-duration="2600"
+          >
             <img src="/img/about.png" alt="" />
           </div>
-          <div class="about__content">
+          <div
+            class="about__content"
+            data-aos="fade-left"
+            data-aos-duration="2600"
+          >
             <p class="about__smtitle">About Us</p>
             <h2 class="about__title">
               We speak the good <br />
@@ -82,10 +100,18 @@
       <!-- menu section -->
       <section class="menu" id="menu">
         <div class="container">
-          <p class="menu__smtitle">Foods Menu</p>
-          <h2 class="menu__title">Fresh taste and great price</h2>
+          <p
+            class="menu__smtitle"
+            data-aos="fade-down"
+            data-aos-duration="2600"
+          >
+            Foods Menu
+          </p>
+          <h2 class="menu__title" data-aos="fade-down" data-aos-duration="2600">
+            Fresh taste and great price
+          </h2>
           <div class="menu__row">
-            <div class="menu__col">
+            <div class="menu__col" data-aos="fade-up" data-aos-duration="2600">
               <div class="menu__shop">
                 <a href="#">
                   <i class="uil uil-shopping-cart-alt"></i>
@@ -100,7 +126,7 @@
                 <p class="menu__inner__price">$11.00</p>
               </div>
             </div>
-            <div class="menu__col">
+            <div class="menu__col" data-aos="fade-up" data-aos-duration="2600">
               <div class="menu__shop">
                 <a href="#">
                   <i class="uil uil-shopping-cart-alt"></i>
@@ -115,7 +141,7 @@
                 <p class="menu__inner__price">$11.00</p>
               </div>
             </div>
-            <div class="menu__col">
+            <div class="menu__col" data-aos="fade-up" data-aos-duration="2600">
               <div class="menu__shop">
                 <a href="#">
                   <i class="uil uil-shopping-cart-alt"></i>
@@ -133,7 +159,108 @@
           </div>
         </div>
       </section>
+
+      <!-- service section -->
+      <section class="service" id="service">
+        <div class="container">
+          <p
+            class="service__smtitle"
+            data-aos="fade-down"
+            data-aos-duration="2600"
+          >
+            Service
+          </p>
+          <h2
+            class="service__title"
+            data-aos="fade-down"
+            data-aos-duration="2600"
+          >
+            We provide best quality food.
+          </h2>
+          <div class="service__row">
+            <div
+              class="service__col"
+              data-aos="fade-up"
+              data-aos-duration="2600"
+            >
+              <div class="service__inner">
+                <div class="service__inner__img">
+                  <img src="./img/s1.png" alt="" />
+                </div>
+                <h4 class="service__inner__title">Order</h4>
+                <p class="service__inner__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                  voluptatum error deserunt eaque quasi aspernatur?
+                </p>
+              </div>
+            </div>
+            <div
+              class="service__col"
+              data-aos="fade-up"
+              data-aos-duration="2600"
+            >
+              <div class="service__inner">
+                <div class="service__inner__img">
+                  <img src="./img/s2.png" alt="" />
+                </div>
+                <h4 class="service__inner__title">Shipping</h4>
+                <p class="service__inner__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                  voluptatum error deserunt eaque quasi aspernatur?
+                </p>
+              </div>
+            </div>
+            <div
+              class="service__col"
+              data-aos="fade-up"
+              data-aos-duration="2600"
+            >
+              <div class="service__inner">
+                <div class="service__inner__img">
+                  <img src="./img/s3.png" alt="" />
+                </div>
+                <h4 class="service__inner__title">Delivered</h4>
+                <p class="service__inner__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                  voluptatum error deserunt eaque quasi aspernatur?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__box">
+            <h2
+              class="contact__title"
+              data-aos="fade-down"
+              data-aos-duration="2600"
+            >
+              We make quality food <br />
+              Everday
+            </h2>
+            <a
+              class="contact__link"
+              href="#footer"
+              data-aos="fade-up"
+              data-aos-duration="2600"
+            >
+              <button>Let's Talk</button>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- LINK AOU LIBRRAY -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
 
     <script src="/app.js"></script>
   </body>
