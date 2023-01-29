@@ -393,6 +393,67 @@ header .container {
   cursor: pointer;
 }
 
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__list {
+  width: 25%;
+}
+
+.footer__title {
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--c5);
+  padding: 5px 0;
+}
+
+.footer__title:hover::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  bottom: 0;
+  background-color: #f37126;
+  border-radius: 5px;
+}
+
+.footer__item a {
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #7e7b7b;
+}
+
+.footer__item a:hover {
+  color: #fff;
+}
+
+.icon__box {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f37126;
+  border-radius: 20px;
+}
+
+.footer__link a {
+  font-size: 20px;
+  color: #fff;
+}
+
 @media screen and (max-width: 1000px) {
   .container {
     padding: 0 60px;
@@ -447,6 +508,15 @@ header .container {
   .service__col {
     width: 48%;
   }
+
+  .footer__menu {
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .footer__list {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -492,6 +562,10 @@ header .container {
   .service__col {
     width: 90%;
     padding: 25px 0px;
+  }
+
+  .footer__list {
+    width: 40%;
   }
 }
 
@@ -566,5 +640,9 @@ header .container {
 
   .service__inner__img img {
     width: 30%;
+  }
+
+  .footer__list {
+    width: 85%;
   }
 }
