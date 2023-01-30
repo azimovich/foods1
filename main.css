@@ -433,7 +433,7 @@ header .container {
 }
 
 .icon__box {
-  padding-top: 20px;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   gap: 15px;
